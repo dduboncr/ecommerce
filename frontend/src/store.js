@@ -11,6 +11,10 @@ import { cartReducer } from './reducers/cart';
 const cartItemsFromStorage = localStorage.getItem('cartItems')
   ? JSON.parse(localStorage.getItem('cartItems'))
   : [];
+
+console.log({
+  cartItemsFromStorage,
+});
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
